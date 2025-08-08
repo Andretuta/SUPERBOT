@@ -1,0 +1,41 @@
+# Ignorar arquivos e pastas sensíveis e de ambiente
+.env
+*.env*
+
+# Dados sensíveis e de produção
+data/*.json
+!data/groups.json  # Se groups.json não for sensível, remova esta linha
+
+# Logs
+debug.log
+logs/*.log
+
+# Arquivos de autenticação do WhatsApp
+.wwebjs_auth/
+.session/
+
+# Arquivos de cache e temporários
+*.log
+*.tmp
+*.bak
+
+# Node modules
+node_modules/
+
+# Outros arquivos que podem conter tokens, números ou credenciais
+bot_admins.json
+telegram_chats.json
+
+# VSCode
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Backup e arquivos de lock
+package-lock.json
+yarn.lock
+
+# Ignorar QR codes do WhatsApp (se existirem)
+qr.png
